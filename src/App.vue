@@ -36,10 +36,8 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer
+    </v-navigation-drawer>
 
-    <v-app-bar app>
-      <v-app-bar-nav-icon ></v-app-bar-nav-icon>
   <v-app-bar
       app
       color="primary"
@@ -72,12 +70,7 @@
       <v-btn icon>
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
-    </v-app-bar
-  
-     <v-toolbar-title> Façam suas tarefas diárias !</v-toolbar-title>
-    
     </v-app-bar>
-
     <v-main>
       <router-view></router-view>
     </v-main>

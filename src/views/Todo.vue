@@ -12,10 +12,7 @@
             clearable
          ></v-text-field>
   
-    <v-list
-     class="pt-0"
-      flat 8
-    >       
+    <v-list class="pt-0" flat8>       
         <div
              v-for="task in tasks"
              :key="task.id"
@@ -56,8 +53,6 @@
          </v-list-item>
         <v-divider></v-divider>
         </div>
-   
-
     </v-list>
   </div>
 </template>
@@ -70,7 +65,7 @@
       return {
         newTaskTitle: '',
        tasks: [
-        /*  {
+          {
             id:1,
             title: 'Acorde',
             done: false
@@ -84,8 +79,7 @@
             id:3,
             title: 'Beba o Café',
             done: false
-         }, */
-           
+         },
            ]        
          }
        
@@ -101,7 +95,7 @@
            this.newTaskTitle = ''
         },
        doneTask(id)  {
-        let task = this.tasks.filter(task => task.id === id) [0]
+        let task = this.tasks.filter(task => task.id === id)[0]
         task.done = !task.done
 
        },
